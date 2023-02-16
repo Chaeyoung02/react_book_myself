@@ -1,13 +1,29 @@
-import * as D from './data'
+import { Component } from "react"
+import ClassComponent from "./ClassComponent"
+export default class App extends Component {
+  /*isLoading값에 따른 분기
+  render() {
+    const isLoading = true
+    const children = isLoading ? (
+      <p>loading...</p>
+    ) : (
+      <ul>
+        <li>
+          <a href="http://www.google.com">
+            <p>go to google</p>
+          </a>
+        </li>
+      </ul>
+    )
+    return <div>{children}</div>
 
-export default function App() {
-  return (
-    <div>
-      <p>
-        {D.randomName()}, {D.randomJobTitle()}, {D.randomDayMonthYear()}
-      </p>
-      <img src={D.randomAvatar()} height="50" />
-      <img src={D.randomImage()} height="300" />
-    </div>
-  )
+  }*/
+  render() {
+    return (
+      <ul>
+        <ClassComponent />
+        <ClassComponent />
+      </ul>
+    )
+  }
 }
