@@ -1,3 +1,25 @@
-export default function CopyMe() {
-    return <div>CopyMe</div>
+//<input> 유형에 따라 사용자 입력값 얻기
+import type { ChangeEvent } from "react";
+export default function OnChange() {
+    const onChangeValue = (e: ChangeEvent<HTMLInputElement>) => {
+        e.stopPropagation()
+        e.preventDefault()
+        console.log('onChangeValue', e.target.value)
+    }
+    const onChangeChecked = (e: ChangeEvent<HTMLInputElement>) => {
+        e.stopPropagation()
+        console.log('onChagedChecked', e.target.checked)
+    }
+    const onChangeFiles = (e: ChangeEvent<HTMLInputElement>) => {
+        e.stopPropagation()
+        console.log('onChangeFiles', e.target.files)
+    }
+    return (
+        <div>
+            <p>OnChange</p>
+            <input type="text" onChange={onChangeValue} placeholder="type some text" defaultValue="Hello" />
+            <input type="checkbox" onChange={onChangeChecked} defaultChecked />
+            <input type="file" onChange={onChangeFiles} multiple accept="images/*" />
+        </div>
+    )
 }
