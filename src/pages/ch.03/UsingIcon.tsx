@@ -1,4 +1,4 @@
-//아이콘 사용
+//아이콘 사용 + 경로 주의
 import { Icon } from '../../components'
 
 export default function UsingIcon() {

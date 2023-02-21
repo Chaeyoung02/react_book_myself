@@ -1,4 +1,4 @@
-//classname, style, name icon 컴포넌트
+//classname, style, name icon 컴포넌트,className 지정
 import { Icon } from '../../components'
 export default function UsingIconWithCSSClass() {
     return (

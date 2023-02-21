@@ -1,4 +1,4 @@
-
+//bootstrap 이용 
 export default function Bootstrap() {
     return (
         <form>

@@ -1,3 +1,4 @@
+//style 지정
 export default function Style() {
     return (
         <div>
