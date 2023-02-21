@@ -4,6 +4,7 @@ import './index.css';
 import * as D from './data';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '@fontsource/material-icons'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

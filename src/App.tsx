@@ -1,14 +1,25 @@
-import EventListener from './pages/EventListener'
-import OnClick from './pages/OnClick'
-import ReactOnClick from './pages/ReactOnClick'
-import DispatchEvent from './pages/DispatchEvent'
-import EventBubbling from './pages/EventBubbling'
-import StopPropagation from './pages/StopPropagation'
-import VariousInputs from './pages/VariousInputs'
-import OnChange from './pages/OnChange'
-import FileInput from './pages/FileInput'
-import DragDrop from './pages/DragDrop'
-import FileDrop from './pages/FileDrop'
+import Tailwindcss from './pages/ch.03/Tailwindcss'
+import Color from './pages/ch.03/Color'
+import TextsTest from './pages/ch.03/TextsTest'
+
+//import Bootstrap from './pages/ch.03/Bootstrap'
+//import Icon from './pages/ch.03/Icon'
+//import Style from './pages/ch.03/Style'
+//import UsingIcon from './pages/ch.03/UsingIcon'
+//import UsingIconWithCSSClass from './pages/ch.03/UsingIconWithCSSClass'
+//import './App.css'
+
+//import EventListener from './pages/EventListener'
+//import OnClick from './pages/OnClick'
+//import ReactOnClick from './pages/ReactOnClick'
+//import DispatchEvent from './pages/DispatchEvent'
+//import EventBubbling from './pages/EventBubbling'
+//import StopPropagation from './pages/StopPropagation'
+//import VariousInputs from './pages/VariousInputs'
+//import OnChange from './pages/OnChange'
+//import FileInput from './pages/FileInput'
+//import DragDrop from './pages/DragDrop'
+//import FileDrop from './pages/FileDrop'
 
 //import { Component } from "react"
 //import ClassComponent from "./ClassComponent"
@@ -87,6 +98,8 @@ export default function App() {
   const texts = ['Hello', 'World'].map((text, index) => <P key={index} children={text} />)
   return <div children={texts} />
 }*/
+
+/*ch.02 이벤트 처리
 export default function App() {
   return (
     <div>
@@ -101,6 +114,31 @@ export default function App() {
       <ReactOnClick />
       <OnClick />
       <EventListener />
+    </div>
+  )
+}*/
+
+/* 3-1css스타일링
+export default function App() {
+  return (
+    <div>
+      <UsingIconWithCSSClass />
+      <UsingIcon />
+      <Style />
+      <Icon />
+      <Bootstrap />
+
+    </div>
+  )
+}*/
+
+/* 3-2 테일윈드 css*/
+export default function App() {
+  return (
+    <div>
+      <TextsTest />
+      <Color />
+      <Tailwindcss />
     </div>
   )
 }
