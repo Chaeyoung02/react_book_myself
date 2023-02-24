@@ -1,6 +1,19 @@
-import Tailwindcss from './pages/ch.03/Tailwindcss'
-import Color from './pages/ch.03/Color'
-import TextsTest from './pages/ch.03/TextsTest'
+import DivTest from './pages/ch.03/DivTest'
+import ViewportTest from './pages/ch.03/ViewportTest'
+import HeightTest from './pages/ch.03/HeightTest'
+import PaddingTest from './pages/ch.03/PaddingTest'
+import MarginTest from './pages/ch.03/MarginTest'
+import ImageTest from './pages/ch.03/ImageTest'
+import BackgroundImageTest from './pages/ch.03/BackgroundImageTest'
+import DisplayTest from './pages/ch.03/DisplayTest'
+import DisplayNoneTest from './pages/ch.03/DisplayNoneTest'
+import AvatarTest from './pages/ch.03/AvatarTest'
+import PositionTest from './pages/ch.03/PositionTest'
+import OverlayTest from './pages/ch.03/OverlayTest'
+
+//import Tailwindcss from './pages/ch.03/Tailwindcss'
+//import Color from './pages/ch.03/Color'
+//import TextsTest from './pages/ch.03/TextsTest'
 
 //import Bootstrap from './pages/ch.03/Bootstrap'
 //import Icon from './pages/ch.03/Icon'
@@ -132,7 +145,7 @@ export default function App() {
   )
 }*/
 
-/* 3-2 테일윈드 css*/
+/* 3-2 테일윈드 css
 export default function App() {
   return (
     <div>
@@ -140,5 +153,25 @@ export default function App() {
       <Color />
       <Tailwindcss />
     </div>
+  )
+}*/
+
+/* 3-3 css 상자모델 */
+export default function App() {
+  return (
+    <main>
+      <OverlayTest />
+      <PositionTest />
+      <DisplayNoneTest />
+      <DisplayTest />
+      <AvatarTest />
+      <BackgroundImageTest />
+      <ImageTest />
+      <MarginTest />
+      <PaddingTest />
+      <HeightTest />
+      <ViewportTest />
+      <DivTest />
+    </main>
   )
 }
