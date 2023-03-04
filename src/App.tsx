@@ -1,15 +1,23 @@
-import DivTest from './pages/ch.03/DivTest'
-import ViewportTest from './pages/ch.03/ViewportTest'
-import HeightTest from './pages/ch.03/HeightTest'
-import PaddingTest from './pages/ch.03/PaddingTest'
-import MarginTest from './pages/ch.03/MarginTest'
-import ImageTest from './pages/ch.03/ImageTest'
-import BackgroundImageTest from './pages/ch.03/BackgroundImageTest'
-import DisplayTest from './pages/ch.03/DisplayTest'
-import DisplayNoneTest from './pages/ch.03/DisplayNoneTest'
-import AvatarTest from './pages/ch.03/AvatarTest'
-import PositionTest from './pages/ch.03/PositionTest'
-import OverlayTest from './pages/ch.03/OverlayTest'
+import DirectionTest from './pages/ch.03/DirectionTest'
+import WrapTest from './pages/ch.03/WrapTest'
+import MinMaxTest from './pages/ch.03/MinMaxTest'
+import JustifyCenterTest from './pages/ch.03/JustifyCenterTest'
+import AlignTest from './pages/ch.03/AlignTest'
+import UserContainer from './pages/ch.03/UserContainer'
+import CardContainer from './pages/ch.03/CardContainer'
+
+//import DivTest from './pages/ch.03/DivTest'
+//import ViewportTest from './pages/ch.03/ViewportTest'
+//import HeightTest from './pages/ch.03/HeightTest'
+//import PaddingTest from './pages/ch.03/PaddingTest'
+//import MarginTest from './pages/ch.03/MarginTest'
+//import ImageTest from './pages/ch.03/ImageTest'
+//import BackgroundImageTest from './pages/ch.03/BackgroundImageTest'
+//import DisplayTest from './pages/ch.03/DisplayTest'
+//import DisplayNoneTest from './pages/ch.03/DisplayNoneTest'
+//import AvatarTest from './pages/ch.03/AvatarTest'
+//import PositionTest from './pages/ch.03/PositionTest'
+//import OverlayTest from './pages/ch.03/OverlayTest'
 
 //import Tailwindcss from './pages/ch.03/Tailwindcss'
 //import Color from './pages/ch.03/Color'
@@ -156,7 +164,7 @@ export default function App() {
   )
 }*/
 
-/* 3-3 css 상자모델 */
+/* 3-3 css 상자모델 
 export default function App() {
   return (
     <main>
@@ -172,6 +180,21 @@ export default function App() {
       <HeightTest />
       <ViewportTest />
       <DivTest />
+    </main>
+  )
+}*/
+
+/* 3-4 플렉스 레이아웃 이해하기*/
+export default function App() {
+  return (
+    <main>
+      <CardContainer />
+      <UserContainer />
+      <AlignTest />
+      <JustifyCenterTest />
+      <MinMaxTest />
+      <WrapTest />
+      <DirectionTest />
     </main>
   )
 }
