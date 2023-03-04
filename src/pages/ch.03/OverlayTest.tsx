@@ -1,9 +1,18 @@
-//Title 컴포넌트를 사용하는 기본 파일
-import { Title } from '../../components'
-export default function CopyMe() {
+//Overlay 컴포넌트 사용
+import { Title, Div, Icon, Overlay } from '../../components'
+
+export default function OverlayTest() {
     return (
         <section className="mt-4">
-            <Title>CopyMe</Title>
+            <Title>OverlayTest</Title>
+            <Overlay opacityClass='bg-black/70'>
+                <Div className="relative flex items-center justify-center p-8 bg-white h-1/2">
+                    <Div className="absolute" right='1rem' top='1rem'>
+                        <Icon name="close" className="text-gray-500" />
+                    </Div>
+                    <p className="text-5xl">modal dialog box</p>
+                </Div>
+            </Overlay>
             <div className="mt-4"></div>
         </section>
     )
