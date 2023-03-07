@@ -1,10 +1,17 @@
-//Title 컴포넌트를 사용하는 기본 파일
-import { Title } from '../../components'
-export default function CopyMe() {
+//MinMaxWidthHeight 타입 사용용
+import { Div, Title } from '../../components'
+import * as D from '../../data'
+
+export default function MinMaxTest() {
     return (
         <section className="mt-4">
-            <Title>CopyMe</Title>
-            <div className="mt-4"></div>
+            <Title>MinMaxTest</Title>
+            <Div className="p-4 bg-gray-300">
+                <Div src={D.randomImage(800, 300)} className="bg-cover">
+                    <Div className="w-1/2 h-80 bg-blue-500"
+                        minWidth='300px' maxWidth='500px' />
+                </Div>
+            </Div>
         </section>
     )
 }
