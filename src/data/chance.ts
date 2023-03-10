@@ -3,7 +3,7 @@ const chance = new Chance()
 
 export const randomUUID = () => chance.guid()
 export const randomName = () => chance.name()
-export const randomEmaii = () => chance.email()
+export const randomEmail = () => chance.email()
 export const randomId = () => chance.fbid()
 export const randomJobTitle = () => chance.profession()
 export const randomCompanyName = () => chance.company()
