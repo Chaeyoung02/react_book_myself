@@ -1,10 +1,14 @@
-import DirectionTest from './pages/ch.03/DirectionTest'
-import WrapTest from './pages/ch.03/WrapTest'
-import MinMaxTest from './pages/ch.03/MinMaxTest'
-import JustifyCenterTest from './pages/ch.03/JustifyCenterTest'
-import AlignTest from './pages/ch.03/AlignTest'
-import UserContainer from './pages/ch.03/UserContainer'
-import CardContainer from './pages/ch.03/CardContainer'
+import ButtonTest from './pages/ch.03/ButtonTest'
+import InputTest from './pages/ch.03/InputTest'
+import ModalTest from './pages/ch.03/ModalTest'
+
+//import DirectionTest from './pages/ch.03/DirectionTest'
+//import WrapTest from './pages/ch.03/WrapTest'
+//import MinMaxTest from './pages/ch.03/MinMaxTest'
+//import JustifyCenterTest from './pages/ch.03/JustifyCenterTest'
+//import AlignTest from './pages/ch.03/AlignTest'
+//import UserContainer from './pages/ch.03/UserContainer'
+//import CardContainer from './pages/ch.03/CardContainer'
 
 //import DivTest from './pages/ch.03/DivTest'
 //import ViewportTest from './pages/ch.03/ViewportTest'
@@ -184,7 +188,7 @@ export default function App() {
   )
 }*/
 
-/* 3-4 플렉스 레이아웃 이해하기*/
+/* 3-4 플렉스 레이아웃 이해하기
 export default function App() {
   return (
     <main>
@@ -195,6 +199,17 @@ export default function App() {
       <MinMaxTest />
       <WrapTest />
       <DirectionTest />
+    </main>
+  )
+}*/
+
+/* 3-5 daisyui CSS 컴포넌트 이해하기*/
+export default function App() {
+  return (
+    <main>
+      <ButtonTest />
+      <InputTest />
+      <ModalTest />
     </main>
   )
 }

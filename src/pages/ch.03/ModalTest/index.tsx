@@ -1,5 +1,5 @@
 //Title 컴포넌트를 사용하는 기본 파일
-import { Title } from '../components'
+import { Title } from '../../../components'
 export default function CopyMe() {
     return (
         <section className="mt-4">
