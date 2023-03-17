@@ -1,6 +1,18 @@
-import ButtonTest from './pages/ch.03/ButtonTest'
-import InputTest from './pages/ch.03/InputTest'
-import ModalTest from './pages/ch.03/ModalTest'
+import UseOrCreateTest from './pages/ch.04/UseOrCreateTest'
+import Memo from './pages/ch.04/Memo'
+import Callback from './pages/ch.04/Callback'
+import HighOrderCallback from './pages/ch.04/HighOrderCallback'
+
+//import {useClock} from './hooks'
+//import Clock from './pages/ch.04/Clock'
+//import Clock from './pages/ch.04/Clock'
+//import { useEffect, useState } from 'react'
+//import { clearInterval } from 'timers'
+//import { useRef, useEffect } from 'react'
+
+//import ButtonTest from './pages/ch.03/ButtonTest'
+//import InputTest from './pages/ch.03/InputTest'
+//import ModalTest from './pages/ch.03/ModalTest'
 
 //import DirectionTest from './pages/ch.03/DirectionTest'
 //import WrapTest from './pages/ch.03/WrapTest'
@@ -203,7 +215,7 @@ export default function App() {
   )
 }*/
 
-/* 3-5 daisyui CSS 컴포넌트 이해하기*/
+/* 3-5 daisyui CSS 컴포넌트 이해하기
 export default function App() {
   return (
     <main>
@@ -211,5 +223,53 @@ export default function App() {
       <InputTest />
       <ModalTest />
     </main>
+  )
+}*/
+
+/* 4-1 리액트 훅 
+useRef 사용
+export default function App() {
+  let today = useRef(new Date())
+  useEffect(() => {
+    console.log('useEffect called.')
+    const duration = 1000
+    const id = setInterval(() => {
+      today.current = new Date()
+      console.log('today.current', today.current.toLocaleTimeString())
+    }, duration)
+    return () => clearInterval(id)
+  },[])
+  return <Clock today={today.current} />
+}
+시계 앱 timers 오류
+export default function App() {
+  const [today, setToday] = useState(new Date())
+
+  useEffect(() => {
+    const duration = 1000
+    const id = setInterval(() => {
+      setToday(new Date())
+    },duration)
+    return () => clearInterval(id)
+  }, [])
+
+  return <Clock today={today} />
+}
+
+export default function App() {
+  const today = useClock()
+  return <Clock today = {today} />
+}
+*/
+
+/* 4-2 useMemo와  useCallback 훅 이해 */
+export default function App() {
+  return ( 
+    <div>
+      <HighOrderCallback/>
+      <Callback/>
+      <Memo/>
+      <UseOrCreateTest/>
+    </div>
   )
 }
