@@ -1,7 +1,16 @@
-import UseOrCreateTest from './pages/ch.04/UseOrCreateTest'
-import Memo from './pages/ch.04/Memo'
-import Callback from './pages/ch.04/Callback'
-import HighOrderCallback from './pages/ch.04/HighOrderCallback'
+import NumberState from './pages/ch.04/NumberState'
+import InputTest from './pages/ch.04/InputTest'
+import ShowHideModal from './pages/ch.04/ShowHideModal'
+import RadioInputTest from './pages/ch.04/RadioInputTest'
+import HigherOrderRadioInputTest from './pages/ch.04/HigherOrderRadioInputTest'
+import BasicForm from './pages/ch.04/BasicForm'
+import ObjectState from './pages/ch.04/ObjectState'
+import ArrayState from './pages/ch.04/ArrayState'
+
+//import UseOrCreateTest from './pages/ch.04/UseOrCreateTest'
+//import Memo from './pages/ch.04/Memo'
+//import Callback from './pages/ch.04/Callback'
+//import HighOrderCallback from './pages/ch.04/HighOrderCallback'
 
 //import {useClock} from './hooks'
 //import Clock from './pages/ch.04/Clock'
@@ -262,7 +271,7 @@ export default function App() {
 }
 */
 
-/* 4-2 useMemo와  useCallback 훅 이해 */
+/* 4-2 useMemo와  useCallback 훅 이해 
 export default function App() {
   return ( 
     <div>
@@ -273,3 +282,19 @@ export default function App() {
     </div>
   )
 }
+*/
+ /* 4-3 useState 훅 이해 */
+export default function App() {
+  return (
+    <main>
+      <ArrayState />
+      <ObjectState />
+      <BasicForm />
+      <HigherOrderRadioInputTest />
+      <RadioInputTest />
+      <ShowHideModal />
+      <InputTest />
+      <NumberState />
+    </main>
+  )  
+} 
