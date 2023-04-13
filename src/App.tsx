@@ -1,11 +1,15 @@
-import NumberState from './pages/ch.04/NumberState'
-import InputTest from './pages/ch.04/InputTest'
-import ShowHideModal from './pages/ch.04/ShowHideModal'
-import RadioInputTest from './pages/ch.04/RadioInputTest'
-import HigherOrderRadioInputTest from './pages/ch.04/HigherOrderRadioInputTest'
-import BasicForm from './pages/ch.04/BasicForm'
-import ObjectState from './pages/ch.04/ObjectState'
-import ArrayState from './pages/ch.04/ArrayState'
+import ClassLifecycle from "./pages/ch.04/ClassLifecycle";
+import WindowResizeTest from "./pages/ch.04/WindowResizeTest";
+import FetchTest from "./pages/ch.04/FetchTest";
+
+//import NumberState from './pages/ch.04/NumberState'
+//import InputTest from './pages/ch.04/InputTest'
+//import ShowHideModal from './pages/ch.04/ShowHideModal'
+//import RadioInputTest from './pages/ch.04/RadioInputTest'
+//import HigherOrderRadioInputTest from './pages/ch.04/HigherOrderRadioInputTest'
+//import BasicForm from './pages/ch.04/BasicForm'
+//import ObjectState from './pages/ch.04/ObjectState'
+//import ArrayState from './pages/ch.04/ArrayState'
 
 //import UseOrCreateTest from './pages/ch.04/UseOrCreateTest'
 //import Memo from './pages/ch.04/Memo'
@@ -71,7 +75,6 @@ import ArrayState from './pages/ch.04/ArrayState'
 //import ClassComponent from "./ClassComponent"
 //import ArrowComponent from "./ArrowComponent"
 //import P from "./P"
-
 
 //export default function App() /*extends Component*/ {
 
@@ -283,7 +286,7 @@ export default function App() {
   )
 }
 */
- /* 4-3 useState 훅 이해 */
+/* 4-3 useState 훅 이해 
 export default function App() {
   return (
     <main>
@@ -297,4 +300,15 @@ export default function App() {
       <NumberState />
     </main>
   )  
-} 
+} */
+
+/* 4-4 useEffect와 useLayoutEffect 훅 이해 */
+export default function App() {
+  return (
+    <main>
+      <FetchTest />
+      <WindowResizeTest />
+      <ClassLifecycle />
+    </main>
+  );
+}
